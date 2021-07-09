@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tractography &#8212; Diffusion MRI</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Connectome Generation" href="connectome.html" />
+    <link rel="prev" title="Fibre Estimation" href="postprocessing.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Diffusion MRI</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../main.html">
+   UCL Summer School: Diffusion MRI
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Diffusion
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../diffusion/introduction.html">
+   Introduction to Diffusion MRI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../diffusion/diffusion_test.html">
+   Check your Understanding
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../diffusion/coding_assignment.html">
+   Coding Assignment
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Tractography
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tractography/introduction.html">
+   Introduction to Tractography
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tractography/tractography_test.html">
+   Check your Understanding
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tractography/coding_assignment.html">
+   Coding Assignment
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Advanced Tractography
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="workshop.html">
+   DTI Workshop
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="preprocessing.html">
+   MRtrix3 DWI Preprocessing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="postprocessing.html">
+   MRtrix3 DWI Fibre Estimation
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   MRtrix3 Tractography
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="connectome.html">
+   MRtrix3 Connectome Generation
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="coding_assignment.html">
+   Coding Assignment
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/pages/advanced_tractography/tractography.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/lbinding/development.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/lbinding/development.github.io/issues/new?title=Issue%20on%20page%20%2Fpages/advanced_tractography/tractography.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/lbinding/development.github.io/edit/master/pages/advanced_tractography/tractography.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#anatomical-constrained-tractography">
+   Anatomical Constrained Tractography
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grey-matter-white-matter-boundary">
+   Grey Matter White Matter Boundary
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#performing-tractography">
+   Performing Tractography
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#viewing-tractography">
+   Viewing Tractography
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#filtering-streamlines">
+   Filtering Streamlines
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="tractography">
+<h1>Tractography<a class="headerlink" href="#tractography" title="Permalink to this headline">¶</a></h1>
+<p><em>by Lawrence Binding</em></p>
+<div class="tip admonition">
+<p class="admonition-title">Estimated Time</p>
+<p>20 minutes</p>
+</div>
+<p>We are finally onto producing our tractograms! Here we are going to talk through whole-brain tractography and we’re going to be using deterministic tractography so we can compare these advanced methods with our very own method. But first, we need to prep two last images!</p>
+<style>
+h1 {text-align: center;}
+h2 {text-align: center;}
+</style>
+<hr class="docutils" />
+<div class="section" id="anatomical-constrained-tractography">
+<h2>Anatomical Constrained Tractography<a class="headerlink" href="#anatomical-constrained-tractography" title="Permalink to this headline">¶</a></h2>
+<p>Anatomical constrained tractography (ACT) provides biological priors to tractography which helps improve its accuracy. White matter fibres only run through white matter, however without ACT the tractography algorithm doesn’t know this. As such, MRtrix3 uses a five tissue type image to characterise, grey matter, subcortical grey matter, white matter, cerebral spinal fluid, and brainstem/lesions. In the MRtrix3 package, there are several different methods on generating this. This ranges from quick processing and rough outline (freesurfer) to longer processing time and a more detailed mask (hsvs). It is worth exploring the differences in these to pick which one would be best for your study. To generate this image we use:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>5ttgen fsl fibrecup_denoise_gibbs_preproc_biaCorr.mif 5tt_fibrecup.mif 
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Note, this DOESN’T WORK on fibrecup phantom as its just too different to a brain. As such, I have manually prepared a hypothetical version of this the example data folder “OvenReady” (5tt_fibrecup.mif).</p></li>
+</ul>
+<figure>
+<img src="../../_static/img/fivett.png" alt="colab" style="width:385px;height:368px;">
+<figcaption>Fig.1 - Five-Tissue Type image: Grey matter (green), subcortical grey matter (dark green), white matter (white), cerebral spinal fluid (blue), lesion/brainstem (red).</figcaption>
+</figure>
+---
+</div>
+<div class="section" id="grey-matter-white-matter-boundary">
+<h2>Grey Matter White Matter Boundary<a class="headerlink" href="#grey-matter-white-matter-boundary" title="Permalink to this headline">¶</a></h2>
+<p>The first thing we need to tell our tractography algorithm is where to start (seed) tractography from. We know that white matter interconnects to grey matter, as such we can use a mask on the boundary of these two tissues. This is generated using:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>5tt2gmwmi 5tt_fibrecup.mif gmwmSeed.mif
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Note this will not work on the fibrecup phantom, I have manually generated an example for you in tractography/gmwmSeed.mif</p></li>
+</ul>
+</div>
+<div class="section" id="performing-tractography">
+<h2>Performing Tractography<a class="headerlink" href="#performing-tractography" title="Permalink to this headline">¶</a></h2>
+<p>The moment is finally upon us! Everything we’ve worked on will now come to fruition. We can generate whole brain tractography using the following command:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>tckgen -algorithm SD_STREAM dhollander/wm.mif -act 5tt_fibrecup.mif -seed_gmwmi gmwmSeed.mif -select 10k tcks_10k.tck 
+</pre></div>
+</div>
+<p>So lets break this script down:</p>
+<ul class="simple">
+<li><p>-algorithm SD_STREAM: Here we are telling tckgen what method to use, if we omit this command it will by default use iFOD2 which is a probabilistic algorithm.</p></li>
+<li><p>dhollander/wm.mif: Here we are telling it to use the FOD generated in the postprocessing state.</p></li>
+<li><p>-act 5tt_fibrecup.mif: We tell the tractogrpahy algorithm to be informed by the five-tissue type image generated in the postprocessing stage.</p></li>
+<li><p>-seed_gmwmi gmwmSeed.mif: We are telling the algorithm how to seed tractography.</p></li>
+<li><p>-select 10k: The number of tracts to select (10,000)</p></li>
+<li><p>tcks_10k.tck: The name of our output file, it needs to end with .tck which is MRtrix3’s format</p></li>
+</ul>
+</div>
+<div class="section" id="viewing-tractography">
+<h2>Viewing Tractography<a class="headerlink" href="#viewing-tractography" title="Permalink to this headline">¶</a></h2>
+<p>Now lets have a look at the tractography:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mrview fibrecup_denoise_gibbs_preproc_biaCorr.mif -tractography.load tcks_10k.tck
+</pre></div>
+</div>
+</div>
+<div class="section" id="filtering-streamlines">
+<h2>Filtering Streamlines<a class="headerlink" href="#filtering-streamlines" title="Permalink to this headline">¶</a></h2>
+<p>This section is beyond the scope of this tutorial. There exists several filtering methods to make tractogrpahy more biologically accurate: COMMIT2, COMMIT, tcksift, tcksift2. It is worth exploring these methods to see if they’re relevant to your study.</p>
+<style>
+  .iframe-container {
+		text-align:center;
+  		width:100%;
+  }
+</style>
+<div class="admonition-further-reading admonition">
+<p class="admonition-title">Further reading</p>
+<ul class="simple">
+<li><p>blah blah</p></li>
+<li><p>blah blah</p></li>
+<li><p>blah blah</p></li>
+<li><p>blah blah</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./pages/advanced_tractography"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="postprocessing.html" title="previous page">Fibre Estimation</a>
+    <a class='right-next' id="next-link" href="connectome.html" title="next page">Connectome Generation</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By UCL–CMIC Summer School<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

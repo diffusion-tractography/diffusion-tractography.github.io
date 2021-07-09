@@ -1,0 +1,63 @@
+format: jb-book
+root: pages/main
+parts:
+- caption: Diffusion
+  chapters:
+  - file: pages/diffusion/introduction
+    title: Introduction to Diffusion MRI
+  - file: pages/diffusion/diffusion_test
+    title: Check your Understanding
+  - file: pages/diffusion/coding_assignment
+    title: Coding Assignment
+- caption: Tractography
+  chapters:
+  - file: pages/tractography/introduction
+    title: Introduction to Tractography
+  - file: pages/tractography/tractography_test
+    title: Check your Understanding
+  - file: pages/tractography/coding_assignment
+    title: Coding Assignment
+- caption: Advanced Tractography
+  chapters:
+  - file: pages/advanced_tractography/workshop
+    title: DTI Workshop
+  - file: pages/advanced_tractography/preprocessing
+    title: MRtrix3 DWI Preprocessing 
+  - file: pages/advanced_tractography/postprocessing
+    title: MRtrix3 DWI Fibre Estimation 
+  - file: pages/advanced_tractography/tractography
+    title: MRtrix3 Tractography 
+  - file: pages/advanced_tractography/connectome
+    title: MRtrix3 Connectome Generation 
+  - file: pages/advanced_tractography/coding_assignment
+    title: Coding Assignment 
+
+
+
+    sections:
+    - file: pages/notebooks/ebm/T1_kde_ebm_walkthrough.ipynb
+      title: Tutorial 1 - EBM Walkthrough
+    - file: pages/notebooks/ebm/T2_pyEBM_walkthrough.ipynb
+      title: Tutorial 2 - DEBM Walkthrough
+  - file: pages/notebooks/disease_course_mapping/disease_course_mapping
+    sections:
+    - file: pages/notebooks/disease_course_mapping/TP1_LMM
+      title: Tutorial 1 - Linear Mixed Effect Models
+    - file: pages/notebooks/disease_course_mapping/TP2_leaspy_beginner
+      title: Tutorial 2 - Get ready with Leaspy
+    - file: pages/notebooks/disease_course_mapping/TP3_advanced_leaspy
+      title: Tutorial 3 - Leaspy advanced
+  - file: pages/notebooks/non_parametric_DPM/non_parametric_DPM
+    sections:
+    - file: pages/notebooks/non_parametric_DPM/GPPM_basic
+      title: Tutorial 1 - GP Progression Model Walkthrough
+    - file: pages/notebooks/non_parametric_DPM/GPPM_DS
+      title: Tutorial 2 - GP Progression Model with Dynamical Systems Walkthrough
+- caption: Conferences
+  chapters:
+  - file: pages/conferences/conferences
+  - file: pages/conferences/MICCAI
+  - file: pages/conferences/ISBI
+- caption: Other
+  chapters:
+  - file: pages/other/contributors

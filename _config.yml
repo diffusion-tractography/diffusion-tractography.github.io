@@ -1,0 +1,34 @@
+# in _config.yml
+title: "Diffusion MRI"
+author: UCL–CMIC Summer School
+#logo: images/logo.png
+execute:
+  execute_notebooks: "off"
+
+exclude_patterns: [README.md, pages/notebooks/_template.ipynb, data/README.md]
+
+
+repository:
+  url: https://github.com/lbinding/development.github.io
+
+html:
+  use_issues_button: true
+  use_edit_page_button: true
+  use_repository_button: true
+
+launch_buttons:
+  colab_url: "https://colab.research.google.com"
+
+
+# Enable definition lists
+parse:
+  myst_enable_extensions:
+    - deflist
+    - dollarmath
+    - amsmath
+
+
+# Enabble latex
+sphinx:
+  config:
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
