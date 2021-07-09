@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UCL Summer School: Diffusion MRI &#8212; Diffusion MRI</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Introduction" href="diffusion/introduction.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Diffusion MRI</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1 current">
+  <a class="reference internal" href="#">
+   UCL Summer School: Diffusion MRI
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Diffusion
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="diffusion/introduction.html">
+   Introduction to Diffusion MRI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="diffusion/diffusion_test.html">
+   Check your Understanding
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="diffusion/coding_assignment.html">
+   Coding Assignment
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Tractography
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="tractography/introduction.html">
+   Introduction to Tractography
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tractography/tractography_test.html">
+   Check your Understanding
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tractography/coding_assignment.html">
+   Coding Assignment
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Advanced Tractography
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="advanced_tractography/workshop.html">
+   DTI Workshop
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="advanced_tractography/preprocessing.html">
+   MRtrix3 DWI Preprocessing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="advanced_tractography/postprocessing.html">
+   MRtrix3 DWI Fibre Estimation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="advanced_tractography/tractography.html">
+   MRtrix3 Tractography
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="advanced_tractography/connectome.html">
+   MRtrix3 Connectome Generation
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="advanced_tractography/coding_assignment.html">
+   Coding Assignment
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/pages/main.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/lbinding/development.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/lbinding/development.github.io/issues/new?title=Issue%20on%20page%20%2Fpages/main.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/lbinding/development.github.io/edit/master/pages/main.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#who-are-we">
+   Who are we?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#programme">
+   Programme:
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#day-one-diffusion">
+     Day One: Diffusion
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#day-two-tractography">
+     Day Two: Tractography
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#day-three-advanced-tractography">
+     Day Three: Advanced Tractography
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#day-four-deep-learning">
+     Day Four: Deep Learning
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data">
+   Data
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="ucl-summer-school-diffusion-mri">
+<h1>UCL Summer School: Diffusion MRI<a class="headerlink" href="#ucl-summer-school-diffusion-mri" title="Permalink to this headline">¶</a></h1>
+<style>
+h1 {text-align: center;}
+</style>
+<p>Welcome to the University College London and centre for medical imaging and computing (CMIC) summer school! This is a week long course which aims to introduce you to complex topics so you can apply them to your own research. This course is focused on magnetic resonance imaging (MRI), more specifically diffusion MRI. By the end of this course, you should grasp the concepts of diffusion MRI, tractography, and what future directions the field might be heading in. You will also gain practical skills, learning how to perform tractography from start to finish.</p>
+<div class="section" id="who-are-we">
+<h2>Who are we?<a class="headerlink" href="#who-are-we" title="Permalink to this headline">¶</a></h2>
+ <p style="float: left;"><img src="../_static/img/anna.jpg" height="120px" width="140px" style="padding-left: 10px; padding-right: 10px "></p>
+    <p>Anna studied engineering during her undergraduate, before working as a research assistant for a year studying traumatic brain injury. In 2018, she joined the CDT in medical imaging at UCL. Her current research focusses on modelling the spead of Alzheimer's disease pathology through the brain's structural connectivity network. </p>
+<br>
+ <p style="float: left;"><img src="../_static/img/lawrence.jpg" height="120px" width="140px" style="padding-left: 10px; padding-right: 10px "></p>
+    <p>Lawrence completed his undergraduate degree in Psychology and then went on to study neuroimaging for his Masters mainly focused on language and TMS. He joined UCL in 2019 and is now focused on preserving language after temporal lobe epilepsy surgery through avoidance of specific white matter connections. </p>
+<br>
+</div>
+<div class="section" id="programme">
+<h2>Programme:<a class="headerlink" href="#programme" title="Permalink to this headline">¶</a></h2>
+<p>We hope by the end of this week, you should be fully equipped to utilise diffusion MRI in your own research. We have curated and developed a series of tutorials which will start you at diffusion MRI and take you all the way through to deep learning and how it could revolutionise research.</p>
+<p>We have structured the class for those who wish to tackle coding challenges along the way and for those which just want to apply the methodology. As such, the structure of this class will be the following:</p>
+<div class="section" id="day-one-diffusion">
+<h3>Day One: Diffusion<a class="headerlink" href="#day-one-diffusion" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Presentation: Introduction to the History of Diffusion MRI</p></li>
+<li><p>Test: The Diffusion Tensor</p></li>
+<li><p>Practical: Diffusion Tensor Estimation</p></li>
+</ol>
+</div>
+<div class="section" id="day-two-tractography">
+<h3>Day Two: Tractography<a class="headerlink" href="#day-two-tractography" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Presentation: Introduction to Tractography</p></li>
+<li><p>Test: Tractography</p></li>
+<li><p>Practical: Deterministic Tractography Algorithm</p></li>
+</ol>
+</div>
+<div class="section" id="day-three-advanced-tractography">
+<h3>Day Three: Advanced Tractography<a class="headerlink" href="#day-three-advanced-tractography" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Workshop: Advantages and Disadvantages of DTI</p></li>
+<li><p>MRtrix3: Tractography and Connectome Tutorial</p></li>
+</ol>
+</div>
+<div class="section" id="day-four-deep-learning">
+<h3>Day Four: Deep Learning<a class="headerlink" href="#day-four-deep-learning" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Workshop: Advantages and Disadvantages of tractography</p></li>
+<li><p>Practical: Deep DTI</p></li>
+</ol>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="data">
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
+<p>We would recommend following the tutorial with the data we have provided. This is because we have used a fake diffusion scan (known as a phantom) which will be quick to run on everyones computers. Please download it from the following link: *** LINK ***</p>
+<hr class="docutils" />
+<p>We hope you have fun! If you have any questions, please contact us using our emails below:</p>
+<p>lawrence.binding.19&#64;ucl.ac.uk</p>
+<p>anna.schroder.18&#64;ucl.ac.uk</p>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./pages"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='right-next' id="next-link" href="diffusion/introduction.html" title="next page">Introduction</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By UCL–CMIC Summer School<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
