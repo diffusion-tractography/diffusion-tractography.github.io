@@ -19,7 +19,7 @@ h2 {text-align: center;}
 Anatomical constrained tractography (ACT) provides biological priors to tractography which helps improve its accuracy. White matter fibres only run through white matter, however without ACT the tractography algorithm doesn't know this. As such, MRtrix3 uses a five tissue type image to characterise, grey matter, subcortical grey matter, white matter, cerebral spinal fluid, and brainstem/lesions. In the MRtrix3 package, there are several different methods on generating this. This ranges from quick processing and rough outline (freesurfer) to longer processing time and a more detailed mask (hsvs). It is worth exploring the differences in these to pick which one would be best for your study. To generate this image we use: 
 
 ```shell
-5ttgen fsl fibrecup_denoise_gibbs_preproc_biaCorr.mif 5tt_fibrecup.mif 
+5ttgen fsl fibrecup_denoise_gibbs_preproc_biasCorr.mif 5tt_fibrecup.mif 
 ```
 * Note, this DOESN'T WORK on fibrecup phantom as its just too different to a brain. As such, I have manually prepared a hypothetical version of this the example data folder "OvenReady" (5tt_fibrecup.mif).
 
@@ -33,15 +33,14 @@ Anatomical constrained tractography (ACT) provides biological priors to tractogr
 The first thing we need to tell our tractography algorithm is where to start (seed) tractography from. We know that white matter interconnects to grey matter, as such we can use a mask on the boundary of these two tissues. This is generated using: 
 
 ```shell
-5tt2gmwmi 5tt_fibrecup.mif gmwmSeed.mif
+5tt2gmwmi 5tt_fibrecup.nii.gz gmwmSeed.mif
 ```
-* Note this will not work on the fibrecup phantom, I have manually generated an example for you in tractography/gmwmSeed.mif
 
 ## Performing Tractography 
 The moment is finally upon us! Everything we've worked on will now come to fruition. We can generate whole brain tractography using the following command: 
 
 ```shell
-tckgen -algorithm SD_STREAM dhollander/wm.mif -act 5tt_fibrecup.mif -seed_gmwmi gmwmSeed.mif -select 10k tcks_10k.tck 
+tckgen -algorithm SD_STREAM tournier/wm.mif -act 5tt_fibrecup.nii.gz -seed_gmwmi gmwmSeed.mif -select 10k tcks_10k.tck 
 ```
 
 So lets break this script down: 
@@ -56,7 +55,7 @@ So lets break this script down:
 Now lets have a look at the tractography: 
 
 ```shell
-mrview fibrecup_denoise_gibbs_preproc_biaCorr.mif -tractography.load tcks_10k.tck
+mrview fibrecup_denoise_gibbs_preproc_biasCorr.mif -tractography.load tcks_10k.tck
 ```
 
 

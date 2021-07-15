@@ -25,17 +25,17 @@ The advanced method we're going to use is constrained spherical deconvolution (C
 
 ```shell
 mkdir tournier
-dwi2response tournier fibrecup_denoise_gibbs_preproc_biaCorr.mif tournier/wm.txt
+dwi2response tournier fibrecup_denoise_gibbs_preproc_biasCorr.mif tournier/wm.txt
 ```
 Then we can map each response to a voxel with: 
 
 ```shell
-dwi2fod csd fibrecup_denoise_gibbs_preproc_biaCorr.mif tournier/wm.txt tournier/wm.mif 
+dwi2fod csd fibrecup_denoise_gibbs_preproc_biasCorr.mif tournier/wm.txt tournier/wm.mif 
 ```
 We can inspect our ODFs with the following command: 
 
 ```shell
-mrview fibrecup_denoise_gibbs_preproc_biaCorr.mif -odf.load_sh tournier/wm.mif 
+mrview fibrecup_denoise_gibbs_preproc_biasCorr.mif -odf.load_sh tournier/wm.mif 
 ```
 <figure>
 <img src="../../_static/img/odf.png" alt="colab" style="width:461px;height:383px;">
@@ -48,17 +48,17 @@ Where Multishell differs from single Shell CSD is its ability to only estimate w
 
 ```shell
 mkdir dhollander
-dwi2response dhollander fibrecup_denoise_gibbs_preproc_biaCorr.mif dhollander/wm.txt dhollander/gm.txt dhollander/csf.txt
+dwi2response dhollander fibrecup_denoise_gibbs_preproc_biasCorr.mif dhollander/wm.txt dhollander/gm.txt dhollander/csf.txt
 ```
 Then we can map each response to a voxel with: 
 
 ```shell
-dwi2fod msmt fibrecup_denoise_gibbs_preproc_biaCorr.mif dhollander/wm.txt dhollander/wm.mif dhollander/gm.txt dhollander/gm.mif dhollander/csf.txt dhollander/csf.mif
+dwi2fod msmt fibrecup_denoise_gibbs_preproc_biasCorr.mif dhollander/wm.txt dhollander/wm.mif dhollander/gm.txt dhollander/gm.mif dhollander/csf.txt dhollander/csf.mif
 ```
 We can inspect our ODFs with the following command: 
 
 ```shell
-mrview fibrecup_denoise_gibbs_preproc_biaCorr.mif -odf.load_sh dhollander/wm.mif 
+mrview fibrecup_denoise_gibbs_preproc_biasCorr.mif -odf.load_sh dhollander/wm.mif 
 ```
 
 ## Single-Shell 3-Tissue CSD (SS3T)

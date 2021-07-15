@@ -7,7 +7,7 @@ h1 {text-align: center;}
 
 
 
-Welcome to the University College London and centre for medical imaging and computing (CMIC) summer school! This is a week long course which aims to introduce you to complex topics so you can apply them to your own research. This course is focused on magnetic resonance imaging (MRI), more specifically diffusion MRI. By the end of this course, you should grasp the concepts of diffusion MRI, tractography, and what future directions the field might be heading in. You will also gain practical skills, learning how to perform tractography from start to finish.   
+Welcome to the University College London and centre for medical imaging and computing (CMIC) summer school! This course is focused on magnetic resonance imaging (MRI), more specifically diffusion MRI. By the end of this week, you should be able to understand how diffusion MRI works, how to perform tractography, limitations within this field, and the future directions the field might be heading in. 
 
 ## Who are we?
  <p style="float: left;"><img src="../_static/img/anna.jpg" height="120px" width="140px" style="padding-left: 10px; padding-right: 10px "></p>
@@ -22,9 +22,7 @@ Welcome to the University College London and centre for medical imaging and comp
 
 ## Programme: 
 
-We hope by the end of this week, you should be fully equipped to utilise diffusion MRI in your own research. We have curated and developed a series of tutorials which will start you at diffusion MRI and take you all the way through to deep learning and how it could revolutionise research. 
-
-We have structured the class for those who wish to tackle coding challenges along the way and for those which just want to apply the methodology. As such, the structure of this class will be the following:  
+We have designed this course to accessible and engaging to all audiences: there will be optional coding tasks along the way for those of you who want a challenge and there will also be the answers available for those who want to see how the magic is done. The structure of this classs will be the following: 
 
 ### Day One: Diffusion
 1. Presentation: Introduction to the History of Diffusion MRI
@@ -43,7 +41,9 @@ We have structured the class for those who wish to tackle coding challenges alon
 ### Day Three: Advanced Tractography
 7. Workshop: Advantages and Disadvantages of DTI 
 
-8. MRtrix3: Tractography and Connectome Tutorial
+8. MRtrix3: Diffusion processing & Tractography and Connectome Tutorial
+
+9. Practical: Comparing algorithms
 
 ### Day Four: Deep Learning
 9. Workshop: Advantages and Disadvantages of tractography

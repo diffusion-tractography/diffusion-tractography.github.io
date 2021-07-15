@@ -389,7 +389,7 @@ mrview fibrecup_denoise_gibbs.mif residual.mif
 <div class="section" id="field-bias-correction">
 <h2>Field Bias Correction<a class="headerlink" href="#field-bias-correction" title="Permalink to this headline">¶</a></h2>
 <p>To improve brain mask estimation, we need to run a bias field correction which will normalise the image.</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>dwibiascorrect ants fibrecup_denoise_gibbs_preproc.mif fibrecup_denoise_gibbs_preproc_biaCorr.mif -bias bias.mif 
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>dwibiascorrect -fsl fibrecup_denoise_gibbs_preproc.mif fibrecup_denoise_gibbs_preproc_biasCorr.mif -bias bias.mif 
 </pre></div>
 </div>
 <p>To check the bias field we just load that into mrview.</p>

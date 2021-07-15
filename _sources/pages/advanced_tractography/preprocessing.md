@@ -91,7 +91,7 @@ dwipreproc fibrecup_denoise_gibbs.mif fibrecup_denoise_gibbs_preproc.mif -rpe_no
 To improve brain mask estimation, we need to run a bias field correction which will normalise the image. 
 
 ```shell
-dwibiascorrect ants fibrecup_denoise_gibbs_preproc.mif fibrecup_denoise_gibbs_preproc_biaCorr.mif -bias bias.mif 
+dwibiascorrect -fsl fibrecup_denoise_gibbs_preproc.mif fibrecup_denoise_gibbs_preproc_biasCorr.mif -bias bias.mif 
 ```
 To check the bias field we just load that into mrview.
 

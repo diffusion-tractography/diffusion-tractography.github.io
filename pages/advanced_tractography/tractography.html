@@ -315,7 +315,7 @@ h2 {text-align: center;}
 <div class="section" id="anatomical-constrained-tractography">
 <h2>Anatomical Constrained Tractography<a class="headerlink" href="#anatomical-constrained-tractography" title="Permalink to this headline">¶</a></h2>
 <p>Anatomical constrained tractography (ACT) provides biological priors to tractography which helps improve its accuracy. White matter fibres only run through white matter, however without ACT the tractography algorithm doesn’t know this. As such, MRtrix3 uses a five tissue type image to characterise, grey matter, subcortical grey matter, white matter, cerebral spinal fluid, and brainstem/lesions. In the MRtrix3 package, there are several different methods on generating this. This ranges from quick processing and rough outline (freesurfer) to longer processing time and a more detailed mask (hsvs). It is worth exploring the differences in these to pick which one would be best for your study. To generate this image we use:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>5ttgen fsl fibrecup_denoise_gibbs_preproc_biaCorr.mif 5tt_fibrecup.mif 
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>5ttgen fsl fibrecup_denoise_gibbs_preproc_biasCorr.mif 5tt_fibrecup.mif 
 </pre></div>
 </div>
 <ul class="simple">
@@ -330,17 +330,14 @@ h2 {text-align: center;}
 <div class="section" id="grey-matter-white-matter-boundary">
 <h2>Grey Matter White Matter Boundary<a class="headerlink" href="#grey-matter-white-matter-boundary" title="Permalink to this headline">¶</a></h2>
 <p>The first thing we need to tell our tractography algorithm is where to start (seed) tractography from. We know that white matter interconnects to grey matter, as such we can use a mask on the boundary of these two tissues. This is generated using:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>5tt2gmwmi 5tt_fibrecup.mif gmwmSeed.mif
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>5tt2gmwmi 5tt_fibrecup.nii.gz gmwmSeed.mif
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Note this will not work on the fibrecup phantom, I have manually generated an example for you in tractography/gmwmSeed.mif</p></li>
-</ul>
 </div>
 <div class="section" id="performing-tractography">
 <h2>Performing Tractography<a class="headerlink" href="#performing-tractography" title="Permalink to this headline">¶</a></h2>
 <p>The moment is finally upon us! Everything we’ve worked on will now come to fruition. We can generate whole brain tractography using the following command:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>tckgen -algorithm SD_STREAM dhollander/wm.mif -act 5tt_fibrecup.mif -seed_gmwmi gmwmSeed.mif -select 10k tcks_10k.tck 
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>tckgen -algorithm SD_STREAM tournier/wm.mif -act 5tt_fibrecup.nii.gz -seed_gmwmi gmwmSeed.mif -select 10k tcks_10k.tck 
 </pre></div>
 </div>
 <p>So lets break this script down:</p>
@@ -356,7 +353,7 @@ h2 {text-align: center;}
 <div class="section" id="viewing-tractography">
 <h2>Viewing Tractography<a class="headerlink" href="#viewing-tractography" title="Permalink to this headline">¶</a></h2>
 <p>Now lets have a look at the tractography:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mrview fibrecup_denoise_gibbs_preproc_biaCorr.mif -tractography.load tcks_10k.tck
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mrview fibrecup_denoise_gibbs_preproc_biasCorr.mif -tractography.load tcks_10k.tck
 </pre></div>
 </div>
 </div>

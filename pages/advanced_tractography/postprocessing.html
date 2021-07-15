@@ -316,15 +316,15 @@ h2 {text-align: center;}
 <h2>SingleShell CSD<a class="headerlink" href="#singleshell-csd" title="Permalink to this headline">¶</a></h2>
 <p>The advanced method we’re going to use is constrained spherical deconvolution (CSD). This method elimiates all priors but one: All white matter shares identical diffusion characteristics. As such, diffusion is mapped over a sphere of response function with the fibre orinetation density function (ODF). First we need to estimate our responses function with:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mkdir tournier
-dwi2response tournier fibrecup_denoise_gibbs_preproc_biaCorr.mif tournier/wm.txt
+dwi2response tournier fibrecup_denoise_gibbs_preproc_biasCorr.mif tournier/wm.txt
 </pre></div>
 </div>
 <p>Then we can map each response to a voxel with:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>dwi2fod csd fibrecup_denoise_gibbs_preproc_biaCorr.mif tournier/wm.txt tournier/wm.mif 
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>dwi2fod csd fibrecup_denoise_gibbs_preproc_biasCorr.mif tournier/wm.txt tournier/wm.mif 
 </pre></div>
 </div>
 <p>We can inspect our ODFs with the following command:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mrview fibrecup_denoise_gibbs_preproc_biaCorr.mif -odf.load_sh tournier/wm.mif 
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mrview fibrecup_denoise_gibbs_preproc_biasCorr.mif -odf.load_sh tournier/wm.mif 
 </pre></div>
 </div>
 <figure>
@@ -337,15 +337,15 @@ dwi2response tournier fibrecup_denoise_gibbs_preproc_biaCorr.mif tournier/wm.txt
 <h2>MultiShell CSD<a class="headerlink" href="#multishell-csd" title="Permalink to this headline">¶</a></h2>
 <p>Where Multishell differs from single Shell CSD is its ability to only estimate white matter. CSD rests upon the assumption that all white matter is the same, not the entire brain is the same! Multishell CSD takes advantage of the fact different tissues have different diffusion principals so we can estimate WM, GM, and CSF seperately! This comes with the benefit of improved estimation! We can do this by:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mkdir dhollander
-dwi2response dhollander fibrecup_denoise_gibbs_preproc_biaCorr.mif dhollander/wm.txt dhollander/gm.txt dhollander/csf.txt
+dwi2response dhollander fibrecup_denoise_gibbs_preproc_biasCorr.mif dhollander/wm.txt dhollander/gm.txt dhollander/csf.txt
 </pre></div>
 </div>
 <p>Then we can map each response to a voxel with:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>dwi2fod msmt fibrecup_denoise_gibbs_preproc_biaCorr.mif dhollander/wm.txt dhollander/wm.mif dhollander/gm.txt dhollander/gm.mif dhollander/csf.txt dhollander/csf.mif
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>dwi2fod msmt fibrecup_denoise_gibbs_preproc_biasCorr.mif dhollander/wm.txt dhollander/wm.mif dhollander/gm.txt dhollander/gm.mif dhollander/csf.txt dhollander/csf.mif
 </pre></div>
 </div>
 <p>We can inspect our ODFs with the following command:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mrview fibrecup_denoise_gibbs_preproc_biaCorr.mif -odf.load_sh dhollander/wm.mif 
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mrview fibrecup_denoise_gibbs_preproc_biasCorr.mif -odf.load_sh dhollander/wm.mif 
 </pre></div>
 </div>
 </div>
