@@ -11,12 +11,12 @@ Welcome to the University College London and centre for medical imaging and comp
 
 ## Who are we?
  <p style="float: left;"><img src="../_static/img/anna.jpg" height="120px" width="140px" style="padding-left: 10px; padding-right: 10px "></p>
-    <p>Anna studied engineering during her undergraduate, before working as a research assistant for a year studying traumatic brain injury. In 2018, she joined the CDT in medical imaging at UCL. Her current research focusses on modelling the spead of Alzheimer's disease pathology through the brain's structural connectivity network. </p>
+    <p>Anna Schroder (She/her) studied engineering during her undergraduate, before working as a research assistant for a year studying traumatic brain injury. In 2018, she joined the CDT in medical imaging at UCL. Her current research focusses on modelling the spead of Alzheimer's disease pathology through the brain's structural connectivity network. </p>
 
 <br>
 
  <p style="float: left;"><img src="../_static/img/lawrence.jpg" height="120px" width="140px" style="padding-left: 10px; padding-right: 10px "></p>
-    <p>Lawrence completed his undergraduate degree in Psychology and then went on to study neuroimaging for his Masters mainly focused on language and TMS. He joined UCL in 2019 and is now focused on preserving language after temporal lobe epilepsy surgery through avoidance of specific white matter connections. </p>
+    <p>Lawrence Binding (He/him) completed his undergraduate degree in Psychology and then went on to study neuroimaging for his Masters mainly focused on language and TMS. He joined UCL in 2019 and is now focused on preserving language after temporal lobe epilepsy surgery through avoidance of specific white matter connections. </p>
 
 <br>
 
