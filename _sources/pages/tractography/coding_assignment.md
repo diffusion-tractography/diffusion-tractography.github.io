@@ -7,7 +7,7 @@ _by Lawrence Binding_
 Around 2 hours to code
 ```
 
-Similar to the DTI estimation coding assignment, the image below will take you to your respective groups colab page and you will require these files ((https://github.com/diffusion-tractography/diffusion-tractography.github.io/tree/main/DATA/DTI_coding_task). While the answers have been hidden and we have provided space for you to have a go at coding this yourself, it is a very difficult task. As such, the main coding assignment will be to slightly alter the outcome of the code by: 
+Similar to the DTI estimation coding assignment, the image below will take you to your respective groups colab page and you will require these files (https://github.com/diffusion-tractography/diffusion-tractography.github.io/tree/main/DATA/DTI_coding_task). While the answers have been hidden and we have provided space for you to have a go at coding this yourself, it is a very difficult task. As such, the main coding assignment will be to slightly alter the outcome of the code by: 
 
 1.   Seed streamlines throughout the white matter, rather than in the ROI mask 
 2.   Place a lower threshold on the streamlines, meaning that only streamlines greater than the threshold length are saved. This should help to remove spurious streamlines

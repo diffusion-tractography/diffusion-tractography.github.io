@@ -54,7 +54,7 @@ We have designed this course to accessible and engaging to all audiences: there 
 
 ## Data 
 
-We would recommend following the tutorial with the data we have provided. This is because we have used a fake diffusion scan (known as a phantom) which will be quick to run on everyones computers. Please download it from the following link: *** LINK ***
+We would recommend following the tutorial with the data we have provided. This is because we have used a fake diffusion scan (known as a phantom) which will be quick to run on everyones computers. Please download it from the following link: https://github.com/diffusion-tractography/diffusion-tractography.github.io/tree/main/DATA/DTI_coding_task
 
 ---
 
