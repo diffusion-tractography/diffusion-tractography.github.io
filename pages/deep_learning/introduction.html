@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Diffusion Coding Assignment &#8212; Diffusion MRI</title>
+    <title>Introduction &#8212; Diffusion MRI</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,7 +51,6 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="prev" title="Connectome Generation" href="connectome.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -135,34 +134,34 @@
   Advanced Tractography
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="workshop.html">
+  <a class="reference internal" href="../advanced_tractography/workshop.html">
    DTI Workshop
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="preprocessing.html">
+  <a class="reference internal" href="../advanced_tractography/preprocessing.html">
    MRtrix3 DWI Preprocessing
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="postprocessing.html">
+  <a class="reference internal" href="../advanced_tractography/postprocessing.html">
    MRtrix3 DWI Fibre Estimation
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="tractography.html">
+  <a class="reference internal" href="../advanced_tractography/tractography.html">
    MRtrix3 Tractography
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="connectome.html">
+  <a class="reference internal" href="../advanced_tractography/connectome.html">
    MRtrix3 Connectome Generation
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../advanced_tractography/coding_assignment.html">
    Coding Assignment
   </a>
  </li>
@@ -207,7 +206,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/pages/advanced_tractography/coding_assignment.md"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/pages/deep_learning/introduction.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -227,10 +226,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/lbinding/development.github.io/issues/new?title=Issue%20on%20page%20%2Fpages/advanced_tractography/coding_assignment.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/lbinding/development.github.io/issues/new?title=Issue%20on%20page%20%2Fpages/deep_learning/introduction.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/lbinding/development.github.io/edit/master/pages/advanced_tractography/coding_assignment.md"><button
+        <a class="edit-button" href="https://github.com/lbinding/development.github.io/edit/master/pages/deep_learning/introduction.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -258,27 +257,20 @@
         
               <div>
                 
-  <div class="section" id="diffusion-coding-assignment">
-<h1>Diffusion Coding Assignment<a class="headerlink" href="#diffusion-coding-assignment" title="Permalink to this headline">¶</a></h1>
-<p><em>by Anna Schroder</em></p>
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p><em>by Lawrence Binding &amp; Anna Schroder</em></p>
 <div class="tip admonition">
 <p class="admonition-title">Estimated Time</p>
-<p>Around 2 hours to code</p>
+<p>30 minutes</p>
 </div>
-<p>Well done! You now have all the tools to perform structural connectome analysis on your own datasets! For those who want a bit of a challenge out of today, there is an additional coding assignment that you can perform yourself. We have the luck of scanning a phantom, this means we have a ground truth of where we should know where tractography runs to (You can find it as GroundTruth.csv).</p>
-<hr class="docutils" />
-<p>Your coding assignment is to:</p>
-<ul class="simple">
-<li><p>Create connectomes of MRtrix3 and your custom made deterministic tractography.</p></li>
-<li><p>Import them into Python</p></li>
-<li><p>Find a way to compare them agains the ground truth!</p></li>
-</ul>
-<p>This is a great method to see how basic and advanced methods compare despite them using the same principals!</p>
-<div class="link-container">
-<p><a href="https://colab.research.google.com/drive/1joBp-tDf81LgO_3pwofjKlzD80nvOw4G?usp=sharing"><img src="../../_static/img/colab.jpg" alt="Google colab" style="width:388px;height:172px;"></a></p>
+<p>Machine learning underwent a boom in 2009 when artifical neural networks started outperforming other established methods. Now we have state-of-the-art algorithms which are changing the way we administer, scan and analyse assessments.</p>
+<p>But what exactly is machine learning and how can it be applied?</p>
+<div class="iframe-container">
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTV4Kijyxa684qjeTD8v0Gp_egWTCAed_FQ-ofiS5W4ny6GQXBTHlmpVbIx0ytgcTQHHbm0eQJYGhG3/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 <style>
-  .link-container {
+  .iframe-container {
 		text-align:center;
   		width:100%;
   }
@@ -286,6 +278,16 @@
 <style>
 h1 {text-align: center;}
 </style>
+<div class="admonition-further-reading admonition">
+<p class="admonition-title">Further reading</p>
+<ul class="simple">
+<li><p>Lundervold, A. S., &amp; Lundervold, A. (2019). An overview of deep learning in medical imaging focusing on MRI. Zeitschrift für Medizinische Physik, 29(2), 102-127.</p></li>
+<li><p>Greenspan, H., Van Ginneken, B., &amp; Summers, R. M. (2016). Guest editorial deep learning in medical imaging: Overview and future promise of an exciting new technique. IEEE transactions on medical imaging, 35(5), 1153-1159.
+– Tian, Q., Bilgic, B., Fan, Q., Liao, C., Ngamsombat, C., Hu, Y., … &amp; Huang, S. Y. (2020). DeepDTI: High-fidelity six-direction diffusion tensor imaging using deep learning. NeuroImage, 219, 117017.
+– Alexander, D. C., Zikic, D., Ghosh, A., Tanno, R., Wottschel, V., Zhang, J., … &amp; Criminisi, A. (2017). Image quality transfer and applications in diffusion MRI. NeuroImage, 152, 283-298.
+– Schilling, K. G., Blaber, J., Huo, Y., Newton, A., Hansen, C., Nath, V., … &amp; Landman, B. A. (2019). Synthesized b0 for diffusion distortion correction (Synb0-DisCo). Magnetic resonance imaging, 64, 62-70.</p></li>
+</ul>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -301,7 +303,7 @@ h1 {text-align: center;}
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./pages/advanced_tractography"
+            path: "./pages/deep_learning"
         },
         predefinedOutput: true
     }
@@ -313,7 +315,6 @@ h1 {text-align: center;}
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="connectome.html" title="previous page">Connectome Generation</a>
 
         </div>
         

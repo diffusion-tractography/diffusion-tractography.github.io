@@ -7,15 +7,27 @@ _by Anna Schroder_
 Around 2 hours to code
 ```
 
+Well done on making it this far! You should have been assigned groups and the links below take you to a shared Google Colab where you and your group can work on the coding assignments together! Google Colab is just an online python notebook which means no more pesky pip installs! The code in the assignment will estimate the level of diffusion in a single voxel. This is required before we create our very own tractography algorithm! The answers are also on the page so if you get stuck or aren't too sure what to do, you can see how Anna has done it! We hope you enjoy!
 
-
-Great job making it this far! Now lets get onto the fun part! The image below will take you to a Google Colab, it is an online python notebook (which means no more pesky pip installs). Here there will be a coding assignment to estimate the diffusion in a single voxel. This is required before we can create our very own tractography algorithm. This assignment is developed for those who want to have a go at the code themselves, and those who wish to see the final product. We hope you enjoy!
+To start this coding assignment you need to download the files from: LINK. After downloading them on the left hand side of Google Colab there is a folder, click it and upload those files to use them!
 
 
 <div class="link-container">
-
-<a href="https://colab.research.google.com/drive/1KmAWtk297MWg52HcOuhBGA4aWsyfkeoU?usp=sharing"><img src="../../_static/img/colab.jpg" alt="Google colab" style="width:388px;height:172px;"></a>
+<a href="https://colab.research.google.com/drive/1Jk2_uR-SY41L7bnPyZkD3Rta0PadyJtU?usp=sharing"><img src="../../_static/img/group1.jpg" alt="Google colab" style="width:388px;height:172px;"></a>
 </div>
+
+<div class="link-container">
+<a href="https://colab.research.google.com/drive/1UWdHqOUUaD0oR1FbrvhS4FOEdujU086w?usp=sharing"><img src="../../_static/img/group2.jpg" alt="Google colab" style="width:388px;height:172px;"></a>
+</div>
+
+<div class="link-container">
+<a href="https://colab.research.google.com/drive/17sn0wxKcuxBdLBpd2Eb_Ydw6-W38OImO?usp=sharing"><img src="../../_static/img/group3.jpg" alt="Google colab" style="width:388px;height:172px;"></a>
+</div>
+
+<div class="link-container">
+<a href="https://colab.research.google.com/drive/1Nv9enG1ZeC8IRtaYWkgSnWJInv4maOvM?usp=sharing"><img src="../../_static/img/group4.jpg" alt="Google colab" style="width:388px;height:172px;"></a>
+</div>
+
 
 <style>
   .link-container {
