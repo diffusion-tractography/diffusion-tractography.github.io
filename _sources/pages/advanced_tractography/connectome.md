@@ -26,7 +26,7 @@ mrview fibrecup_denoise_gibbs_preproc_biaCorr.mif -load.overlay connectome/fibre
 
 
 <figure>
-<img src="../../_static/img/atlas.png" alt="colab" style="width:385px;height:368px;">
+<img src="../../_static/img/atlas.png" alt="colab" style="width:464px;height:371px;">
 <figcaption>Fig.1 - mrview showing the fibre parcellation file.</figcaption>
 </figure>
 
