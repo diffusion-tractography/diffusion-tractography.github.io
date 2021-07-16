@@ -31,8 +31,8 @@ h1 {text-align: center;}
 ```{admonition} Further reading
 - Lundervold, A. S., & Lundervold, A. (2019). An overview of deep learning in medical imaging focusing on MRI. Zeitschrift für Medizinische Physik, 29(2), 102-127.
 - Greenspan, H., Van Ginneken, B., & Summers, R. M. (2016). Guest editorial deep learning in medical imaging: Overview and future promise of an exciting new technique. IEEE transactions on medical imaging, 35(5), 1153-1159.
-– Tian, Q., Bilgic, B., Fan, Q., Liao, C., Ngamsombat, C., Hu, Y., ... & Huang, S. Y. (2020). DeepDTI: High-fidelity six-direction diffusion tensor imaging using deep learning. NeuroImage, 219, 117017.
-– Alexander, D. C., Zikic, D., Ghosh, A., Tanno, R., Wottschel, V., Zhang, J., ... & Criminisi, A. (2017). Image quality transfer and applications in diffusion MRI. NeuroImage, 152, 283-298.
-– Schilling, K. G., Blaber, J., Huo, Y., Newton, A., Hansen, C., Nath, V., ... & Landman, B. A. (2019). Synthesized b0 for diffusion distortion correction (Synb0-DisCo). Magnetic resonance imaging, 64, 62-70.
+- Tian, Q., Bilgic, B., Fan, Q., Liao, C., Ngamsombat, C., Hu, Y., ... & Huang, S. Y. (2020). DeepDTI: High-fidelity six-direction diffusion tensor imaging using deep learning. NeuroImage, 219, 117017.
+- Alexander, D. C., Zikic, D., Ghosh, A., Tanno, R., Wottschel, V., Zhang, J., ... & Criminisi, A. (2017). Image quality transfer and applications in diffusion MRI. NeuroImage, 152, 283-298.
+- Schilling, K. G., Blaber, J., Huo, Y., Newton, A., Hansen, C., Nath, V., ... & Landman, B. A. (2019). Synthesized b0 for diffusion distortion correction (Synb0-DisCo). Magnetic resonance imaging, 64, 62-70.
 ```
 
