@@ -3,7 +3,7 @@ _by Lawrence Binding_
 
 ```{admonition} Estimated Time 
 :class: TIP
-10 minutes
+20 minutes
 ```
 
 ---
