@@ -13,7 +13,7 @@ To start this coding assignment you need to download the files from: (https://gi
 
 
 <div class="link-container">
-<a href="https://colab.research.google.com/drive/1Jk2_uR-SY41L7bnPyZkD3Rta0PadyJtU?usp=sharing"><img src="../../_static/img/group1.png" alt="Google colab" style="width:640px;height:300px;"></a>
+<a href="https://colab.research.google.com/drive/1Jk2_uR-SY41L7bnPyZkD3Rta0PadyJtU?usp=sharing"><img src="../../_static/img/group1.png" alt="Google colab" style="width:640px;height:150px;"></a>
 </div>
 
 <div class="link-container">

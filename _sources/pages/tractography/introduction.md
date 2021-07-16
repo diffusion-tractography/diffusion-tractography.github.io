@@ -21,9 +21,6 @@ We have learnt the fundamentals of diffusion MRI, and estimating the diffusion t
 
 
 ```{admonition} Further reading
-- blah blah 
-- blah blah
-- blah blah
-- blah blah
-
+- Basser, P. J., Pajevic, S., Pierpaoli, C., Duda, J., & Aldroubi, A. (2000). In vivo fiber tractography using DT‐MRI data. Magnetic resonance in medicine, 44(4), 625-632.
+- Yamada, K., Sakai, K., Akazawa, K., Yuen, S., & Nishimura, T. (2009). MR tractography: a review of its clinical applications. Magnetic resonance in medical sciences, 8(4), 165-174.
 ```
