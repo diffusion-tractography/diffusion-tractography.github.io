@@ -6,7 +6,7 @@ _by Lawrence Binding_
 10 minutes
 ```
 
-This day is going to talk through how to use advantaced tractography algorithms which are present in MRtrix3. So far we've learnt how to code our very own diffusion tensor and tractography algorithm. Can we think of any drawbacks to this method and why advantaced tractography methods are required for the brain?  
+Today is going to walk you through how to use advantaced tractography algorithms which are present in MRtrix3. So far we've learnt how to code our very own diffusion tensor and tractography algorithm. Can we think of any drawbacks to this method and why advantaced tractography methods are required for the brain?  
 
 ---
 

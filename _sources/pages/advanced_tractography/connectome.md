@@ -53,9 +53,6 @@ Open up the CSV sheet in Excel,
 
 
 ```{admonition} Further reading
-- blah blah 
-- blah blah
-- blah blah
-- blah blah
-
+- ATLAS INFO: https://neuroimaging-core-docs.readthedocs.io/en/latest/pages/atlases.html 
+- https://mrtrix.readthedocs.io/en/latest/reference/commands/tck2connectome.html
 ```

@@ -117,9 +117,8 @@ There are a lot of steps required to ensure your diffusion data is the best it c
 
 
 ```{admonition} Further reading
-- blah blah 
-- blah blah
-- blah blah
-- blah blah
-
+- https://mrtrix.readthedocs.io/en/latest/reference/commands/dwidenoise.html 
+- https://mrtrix.readthedocs.io/en/latest/reference/commands/mrdegibbs.html
+- https://mrtrix.readthedocs.io/en/3.0_rc1/reference/scripts/dwipreproc.html
+- https://mrtrix.readthedocs.io/en/latest/reference/commands/dwibiascorrect.html
 ```

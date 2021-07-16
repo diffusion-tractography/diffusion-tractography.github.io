@@ -22,8 +22,19 @@ This is a great method to see how basic and advanced methods compare despite the
 
 
 <div class="link-container">
+<a href="https://colab.research.google.com/drive/1_x8qEgao6kJUhqYP9fmFdMakj42GNh6l?usp=sharing"><img src="../../_static/img/group1.png" alt="Google colab" style="width:640px;height:150px;"></a>
+</div>
 
-<a href="https://colab.research.google.com/drive/1joBp-tDf81LgO_3pwofjKlzD80nvOw4G?usp=sharing"><img src="../../_static/img/colab.jpg" alt="Google colab" style="width:388px;height:172px;"></a>
+<div class="link-container">
+<a href="https://colab.research.google.com/drive/18Bdmp5kRe5AdTKWDCKqn0pAQbyeI5yeQ?usp=sharing"><img src="../../_static/img/group2.png" alt="Google colab" style="width:640px;height:150px;"></a>
+</div>
+
+<div class="link-container">
+<a href="https://colab.research.google.com/drive/1rq-f5OiPlO-QOXW_1mSR7KwVqjwmjNVZ?usp=sharing"><img src="../../_static/img/group3.png" alt="Google colab" style="width:640px;height:150px;"></a>
+</div>
+
+<div class="link-container">
+<a href="https://colab.research.google.com/drive/1FA5f69schgcw5vz1XX0y4V30Imh6RIxy?usp=sharing"><img src="../../_static/img/group4.png" alt="Google colab" style="width:640px;height:150px;"></a>
 </div>
 
 

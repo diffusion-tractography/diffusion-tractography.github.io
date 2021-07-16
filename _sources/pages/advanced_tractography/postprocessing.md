@@ -74,9 +74,8 @@ We're not going to cover this method today as it requires a seperate installatio
 
 
 ```{admonition} Further reading
-- blah blah 
-- blah blah
-- blah blah
-- blah blah
+- https://mrtrix.readthedocs.io/en/latest/reference/commands/dwi2response.html
+- https://mrtrix.readthedocs.io/en/latest/reference/commands/dwi2fod.html
+- https://3tissue.github.io
 
 ```

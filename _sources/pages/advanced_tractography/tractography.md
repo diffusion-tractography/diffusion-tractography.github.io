@@ -73,9 +73,6 @@ This section is beyond the scope of this tutorial. There exists several filterin
 
 
 ```{admonition} Further reading
-- blah blah 
-- blah blah
-- blah blah
-- blah blah
-
+- https://mrtrix.readthedocs.io/en/dev/reference/commands/5ttgen.html 
+- https://mrtrix.readthedocs.io/en/latest/reference/commands/tckgen.html
 ```
