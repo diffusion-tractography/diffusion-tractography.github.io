@@ -6,7 +6,7 @@ _by Lawrence Binding_
 30 minutes
 ```
 
-So MRtrix3 is run through lines of code, this can be slightly daunting at first but allows us more freedom when running tractography on large datasets. If you are unfamiliar with how to use the terminal (Mac) or MSYS2 (Windows) then please see the additional guides section for a quick how-to. 
+So MRtrix3 is run through lines of code, this can be slightly daunting at first but allows us more freedom when running tractography on large datasets. If you are unfamiliar with how to use the terminal (Mac) or MSYS2 (Windows) then please see the bash introduction page for a quick how-to.
 
 The first thing we need to do with our diffusion data is to clean it. Diffusion data is messy, very messy and the signal to noise radio is small, very small. The best way we can improve this is by using various correction methods on our diffusion data. 
 <style>
