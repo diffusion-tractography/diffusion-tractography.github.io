@@ -7,7 +7,7 @@ h1 {text-align: center;}
 
 
 
-Welcome to the University College London and centre for medical imaging and computing (CMIC) summer school! This course is focused on magnetic resonance imaging (MRI), more specifically diffusion MRI. By the end of this week, you should be able to understand how diffusion MRI works, how to perform tractography, limitations within this field, and the future directions the field might be heading in. 
+Welcome to the University College London and Centre for Medical Imaging and Computing (CMIC) summer school! This course is focused on magnetic resonance imaging (MRI), more specifically diffusion MRI. By the end of this week, you should be able to understand how diffusion MRI works, how to perform tractography, limitations within this field, and the future directions the field might be heading in. 
 
 ## Who are we?
  <p style="float: left;"><img src="../_static/img/anna.jpg" height="120px" width="140px" style="padding-left: 10px; padding-right: 10px "></p>
@@ -34,7 +34,7 @@ We have designed this course to accessible and engaging to all audiences: there 
 ### Day Two: Tractography
 4. Presentation: Introduction to Tractography
 
-5. Test: Tractography
+5. Test: Basics of Tractography
 
 6. Practical: Deterministic Tractography Algorithm
 
@@ -46,15 +46,15 @@ We have designed this course to accessible and engaging to all audiences: there 
 9. Practical: Comparing algorithms
 
 ### Day Four: Deep Learning
-9. Workshop: Advantages and Disadvantages of tractography
+9. Presentation: Introduction to Machine Learning
 
-10. Practical: Deep DTI
+10. Practical: DeepDTI Optimisation
 
 ---
 
 ## Data 
 
-We would recommend following the tutorial with the data we have provided. This is because we have used a fake diffusion scan (known as a phantom) which will be quick to run on everyones computers. Please download it from the following link: https://github.com/diffusion-tractography/diffusion-tractography.github.io/tree/main/DATA/DTI_coding_task
+We would recommend following the tutorial with the data we have provided. This is because we have used a fake diffusion scan (known as a phantom) which will be quick to run on everyones computers. Please download it from the following link: https://github.com/diffusion-tractography/diffusion-tractography.github.io/tree/main/DATA/
 
 ---
 
