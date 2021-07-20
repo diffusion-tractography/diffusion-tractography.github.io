@@ -6,7 +6,7 @@ _by Lawrence Binding_
 30 minutes
 ```
 
-We have learnt the fundamentals of diffusion MRI, and estimating the diffusion tensor. This already has great applications lookig at the microstructural properties such as FA & MD. But how do look at the actual structure of white matter and where it runs? This is completed using tractography. 
+We have learnt the fundamentals of diffusion MRI, and estimating the diffusion tensor. We can already use these values to look at the microstructural properties of the voxels by looking at FA, MD, AD, etc. values. But how do look at the actual structure of white matter and where it runs? This is completed using tractography. 
 
 <div class="iframe-container">
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vReeXLa7lZsVJLlW-qw-fqxPbKpaKihn6DHT68vLIcU2SGQZscKOEfAQPWxq2EjEvBqbmUpwJA87766/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="562" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
