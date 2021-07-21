@@ -52,7 +52,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Fibre Estimation" href="postprocessing.html" />
-    <link rel="prev" title="DTI Workshop" href="workshop.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -138,8 +138,8 @@
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="workshop.html">
-   DTI Workshop
+  <a class="reference internal" href="introduction.html">
+   MRtrix3 Introduction
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -347,11 +347,11 @@ h2 {text-align: center;}
 <hr class="docutils" />
 <div class="section" id="converting-to-mrtrix3-format">
 <h2>Converting to MRtrix3 Format<a class="headerlink" href="#converting-to-mrtrix3-format" title="Permalink to this headline">¶</a></h2>
-<p>To begin with, we need to get the data in MRtrix3 format (.mif) so we can use the denoising tools. So in the advanced_tractography folder we have our fibrecup.nii.gz and our gradient file (which contains the bvecs and bvals), the question is how do we put them all into one file which MRtrix3 can use. We are able to do this using mrconvert:</p>
+<p>To begin with, we need to get the data in MRtrix3 format (.mif) so we can use their tools. So in the advanced_tractography folder we have our fibrecup.nii.gz, bvec and bval files. So far we’ve been working with grad.txt which contains both bvec (columns 1-3) and bvals (column 4). You may encounter them separated which is known as the fsl format so its good to know how to handle this. We are able to add all these files together with the following command:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mrconvert fibrecup.nii.gz -fslgrad bvecs bvals fibrecup.mif 
 </pre></div>
 </div>
-<p>The above command tells our terminal to use MRtrix3 mrconvert command to take our fibrecup.nii.gz, import the gradient file, and output them in MRtrix3 format .mif. the MIF format contains the bvecs and bvals in the header information, which means less can go wrong!</p>
+<p>The above command tells our terminal to use MRtrix3 mrconvert command to take our fibrecup.nii.gz, import the fsl style gradients bvecs and bvals, and output them in MRtrix3 format .mif. the MIF format contains the bvecs and bvals in the header information, which means less can go wrong!</p>
 </div>
 <hr class="docutils" />
 <div class="section" id="viewing-our-image">
@@ -360,7 +360,7 @@ h2 {text-align: center;}
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mrview  fibrecup.mif
 </pre></div>
 </div>
-<p>Here we are telling mrview (MRtrix3 viewing software) to open the next file</p>
+<p>Here we are telling mrview (MRtrix3 viewing software) to open fibrecup.mif</p>
 </div>
 <hr class="docutils" />
 <div class="section" id="denoising">
@@ -399,10 +399,15 @@ mrview fibrecup_denoise_gibbs.mif residual.mif
 <hr class="docutils" />
 <div class="section" id="distortion-correction-eddy">
 <h2>Distortion correction [EDDY]<a class="headerlink" href="#distortion-correction-eddy" title="Permalink to this headline">¶</a></h2>
-<p>There are several different methods of correcting for distortions induced by motion and echo planar imaging distortions all with different advantages. Synb0-DISCO is a newer method which doesn’t require any additional acquisitions in scanner not only saving time but retrospective data. However, this is run in Docker and we don’t have time to tell you about this. Instead we’re going to be using a tool called EDDY which is packaged in MRtrix3 as dwipreproc.</p>
+<p>NOTE: THIS TAKES AGES! Don’t attempt this on fibrecup!</p>
+<p>There are several different methods of correcting for distortions induced by motion and eddy all with different advantages/disadvantages. Synb0-DISCO is a newer method which doesn’t require any additional acquisitions in scanner not only saving time but also retrospective data. However, this is run in Docker and we don’t have time to tell you about this. Instead we’re going to be using a tool called EDDY which is packaged in MRtrix3 as dwipreproc.</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>dwipreproc fibrecup_denoise_gibbs.mif fibrecup_denoise_gibbs_preproc.mif -rpe_none -pe_dir ap
 </pre></div>
 </div>
+<ul class="simple">
+<li><p>-rpe_none: is telling dwipreproc we don’t have a reverse phase encoding gradient</p></li>
+<li><p>-pe_dir: is telling dwipreproc the acquisition direction (anterior-posterior) (fibrecup doesn’t actually have an aqusition method so its here just for demonstration)</p></li>
+</ul>
 <figure>
 <img src="../../_static/img/eddy.png" alt="colab" style="width:435px;height:278px;">
 <figcaption>Fig.3 - Before (left) and after (right) using dwipreproc.</figcaption>
@@ -410,10 +415,13 @@ mrview fibrecup_denoise_gibbs.mif residual.mif
 </div>
 <div class="section" id="field-bias-correction">
 <h2>Field Bias Correction<a class="headerlink" href="#field-bias-correction" title="Permalink to this headline">¶</a></h2>
-<p>To improve brain mask estimation, we need to run a bias field correction which will normalise the image.</p>
+<p>To improve brain mask estimation and comparison between subjects, we need to run a bias field correction which will normalise the image.</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>dwibiascorrect -fsl fibrecup_denoise_gibbs_preproc.mif fibrecup_denoise_gibbs_preproc_biasCorr.mif -bias bias.mif 
 </pre></div>
 </div>
+<ul class="simple">
+<li><p>-fsl is telling the software to use fsl method of bias correction, you can also use -ants.</p></li>
+</ul>
 <p>To check the bias field we just load that into mrview.</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mrview bias.mif -colourmap <span class="m">2</span>  
 </pre></div>
@@ -469,7 +477,7 @@ mrview fibrecup_denoise_gibbs.mif residual.mif
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="workshop.html" title="previous page">DTI Workshop</a>
+    <a class='left-prev' id="prev-link" href="introduction.html" title="previous page">Introduction</a>
     <a class='right-next' id="next-link" href="postprocessing.html" title="next page">Fibre Estimation</a>
 
         </div>

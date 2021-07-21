@@ -16,12 +16,12 @@ h2 {text-align: center;}
 --- 
 
 ## Data identification
-Before we decide which postprocessing method to use, we need to identify if our data was acquired with multiple b-values. Different types of tissue are sensitive to different strengths of diffusion gradient (b-values). We can tell this by looking at our b-value file and seeing if there is more than 2 unique values (e.g., 0, 1000, 2000, etc.). 
+Before we decide which postprocessing method to use, we need to identify if our data was acquired with multiple b-values. Different types of tissue are sensitive to different strengths of diffusion gradient (b-values). We can tell this by looking at our b-value file and seeing if there is more than 2 unique values (e.g., 0, 1000, 2000, etc.). Our fibrecup has only one value and as such we need to use single-shell CSD. Other methods of multi-shell are available, I would investigate their website (bottom) for more options. 
 
 --- 
 
 ## SingleShell CSD 
-The advanced method we're going to use is constrained spherical deconvolution (CSD). This method elimiates all priors but one: All white matter shares identical diffusion characteristics. As such, diffusion is mapped over a sphere of response function with the fibre orinetation density function (ODF). First we need to estimate our responses function with:
+The advanced method we're going to use is constrained spherical deconvolution (CSD). This method elimiates all priors but one: All white matter shares identical diffusion characteristics. As such, diffusion is mapped over a sphere of response function with the fibre orinetation density function (ODF). First we need to estimate our responses function with: [note: mkdir means create directory]
 
 ```shell
 mkdir tournier

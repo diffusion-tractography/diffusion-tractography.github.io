@@ -138,8 +138,8 @@
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="workshop.html">
-   DTI Workshop
+  <a class="reference internal" href="introduction.html">
+   MRtrix3 Introduction
   </a>
  </li>
  <li class="toctree-l1">
@@ -167,6 +167,11 @@
    Coding Assignment
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="bash_intro.html">
+   Bash Introduction
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -177,6 +182,18 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../deep_learning/introduction.html">
    Introduction
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Anonymous Feedback
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../feedback/feedback.html">
+   Feedback
   </a>
  </li>
 </ul>
@@ -314,12 +331,12 @@ h2 {text-align: center;}
 <hr class="docutils" />
 <div class="section" id="data-identification">
 <h2>Data identification<a class="headerlink" href="#data-identification" title="Permalink to this headline">¶</a></h2>
-<p>Before we decide which postprocessing method to use, we need to identify if our data was acquired with multiple b-values. Different types of tissue are sensitive to different strengths of diffusion gradient (b-values). We can tell this by looking at our b-value file and seeing if there is more than 2 unique values (e.g., 0, 1000, 2000, etc.).</p>
+<p>Before we decide which postprocessing method to use, we need to identify if our data was acquired with multiple b-values. Different types of tissue are sensitive to different strengths of diffusion gradient (b-values). We can tell this by looking at our b-value file and seeing if there is more than 2 unique values (e.g., 0, 1000, 2000, etc.). Our fibrecup has only one value and as such we need to use single-shell CSD. Other methods of multi-shell are available, I would investigate their website (bottom) for more options.</p>
 </div>
 <hr class="docutils" />
 <div class="section" id="singleshell-csd">
 <h2>SingleShell CSD<a class="headerlink" href="#singleshell-csd" title="Permalink to this headline">¶</a></h2>
-<p>The advanced method we’re going to use is constrained spherical deconvolution (CSD). This method elimiates all priors but one: All white matter shares identical diffusion characteristics. As such, diffusion is mapped over a sphere of response function with the fibre orinetation density function (ODF). First we need to estimate our responses function with:</p>
+<p>The advanced method we’re going to use is constrained spherical deconvolution (CSD). This method elimiates all priors but one: All white matter shares identical diffusion characteristics. As such, diffusion is mapped over a sphere of response function with the fibre orinetation density function (ODF). First we need to estimate our responses function with: [note: mkdir means create directory]</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mkdir tournier
 dwi2response tournier fibrecup_denoise_gibbs_preproc_biasCorr.mif tournier/wm.txt
 </pre></div>
