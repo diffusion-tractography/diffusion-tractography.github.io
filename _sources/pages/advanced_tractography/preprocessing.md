@@ -3,7 +3,7 @@ _by Lawrence Binding_
 
 ```{admonition} Estimated Time 
 :class: TIP
-30 minutes
+30-120 minutes
 ```
 
 ```{admonition} Installation REQUIREMENTS 
