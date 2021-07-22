@@ -29,6 +29,9 @@ h1 {text-align: center;}
 
 
 ```{admonition} Further reading
+- IQT: https://github.com/ucl-mig/iqt
+- synB0-DISCO: https://github.com/MASILab/Synb0-DISCO
+- DeepDTI: https://github.com/qiyuantian/DeepDTI
 - Lundervold, A. S., & Lundervold, A. (2019). An overview of deep learning in medical imaging focusing on MRI. Zeitschrift für Medizinische Physik, 29(2), 102-127.
 - Greenspan, H., Van Ginneken, B., & Summers, R. M. (2016). Guest editorial deep learning in medical imaging: Overview and future promise of an exciting new technique. IEEE transactions on medical imaging, 35(5), 1153-1159.
 - Tian, Q., Bilgic, B., Fan, Q., Liao, C., Ngamsombat, C., Hu, Y., ... & Huang, S. Y. (2020). DeepDTI: High-fidelity six-direction diffusion tensor imaging using deep learning. NeuroImage, 219, 117017.
