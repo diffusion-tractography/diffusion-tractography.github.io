@@ -8,7 +8,6 @@ _by Anna Schroder_
 ```
 
 
-
 Congratulations on making it through the week! For the presentation, we had the idea that you can compare the tractogrpahy algorithm you made on Python and MRtrix3 to the ground truth. The below links will take you to a coding assignment where we've calculated the accuracy, specificty, and sensitivity of the python and MRtrix3 connectomes for you. 
 
 Your task is to attempt to optimise the parameters in the python task and MRtrix3 task to find the best values. You can take screenshots in MRtrix3 for your presentation if required and talk through how -angle and -cutoff point influences the above metrics. Furthemore, it might be useful to compare probabilistic and determinstic tractography methods in MRtrix3, to do this, you just have to leave out the -algorithm SD_STREAM section of the tckgen command. 
