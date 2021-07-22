@@ -8,7 +8,7 @@ _by Lawrence Binding_
 
 ```{admonition} Installation REQUIREMENTS 
 :class: DANGER
-This section requires FSL to be installed and works best with a real brain scan!!
+This section requires MRtrix3 & FSL to be installed and works best with a real brain scan!!
 ```
 
 
