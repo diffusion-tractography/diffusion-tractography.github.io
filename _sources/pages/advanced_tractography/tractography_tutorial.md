@@ -11,7 +11,6 @@ _by Lawrence Binding_
 <div class="iframe-container">
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=BsdyWjK4Tuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-</div>
 
 
 <style>
