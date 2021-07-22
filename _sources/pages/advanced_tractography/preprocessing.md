@@ -6,7 +6,7 @@ _by Lawrence Binding_
 30 minutes
 ```
 
-```{admonition} Estimated Time 
+```{admonition} Installation REQUIREMENTS 
 :class: DANGER
 This section requires FSL to be installed and works best with a real brain scan!!
 ```
