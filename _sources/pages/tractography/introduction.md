@@ -1,5 +1,5 @@
 # Introduction
-_by Lawrence Binding_
+_by Lawrence Binding & Anna Schroder_
 
 ```{admonition} Estimated Time 
 :class: TIP

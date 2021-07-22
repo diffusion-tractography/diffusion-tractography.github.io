@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introduction &#8212; Diffusion MRI</title>
+    <title>Presentation Assignment &#8212; Diffusion MRI</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,8 +51,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Basic Tractography Principals" href="tractography_test.html" />
-    <link rel="prev" title="Diffusion Coding Assignment" href="../diffusion/coding_assignment.html" />
+    <link rel="next" title="Feedback" href="../feedback/feedback.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -114,19 +114,19 @@
   Tractography
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tractography/introduction.html">
    Introduction to Tractography
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="tractography_test.html">
+  <a class="reference internal" href="../tractography/tractography_test.html">
    Check your Understanding
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="coding_assignment.html">
+  <a class="reference internal" href="../tractography/coding_assignment.html">
    Coding Assignment
   </a>
  </li>
@@ -178,14 +178,14 @@
   Machine Learning
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../deep_learning/introduction.html">
+  <a class="reference internal" href="introduction.html">
    Introduction
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../deep_learning/coding_assignment.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Coding Assignment
   </a>
  </li>
@@ -242,7 +242,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/pages/tractography/introduction.md"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/pages/deep_learning/coding_assignment.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -262,10 +262,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/diffusion-tractography/diffusion-tractography.github.io/tree/main/issues/new?title=Issue%20on%20page%20%2Fpages/tractography/introduction.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/diffusion-tractography/diffusion-tractography.github.io/tree/main/issues/new?title=Issue%20on%20page%20%2Fpages/deep_learning/coding_assignment.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/tree/main/edit/master/pages/tractography/introduction.md"><button
+        <a class="edit-button" href="https://github.com/tree/main/edit/master/pages/deep_learning/coding_assignment.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -285,6 +285,19 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#your-task-is-to-attempt-to-optimise-the-parameters-in-the-python-task-and-mrtrix3-task-to-find-the-best-values-you-can-take-screenshots-in-mrtrix3-for-your-presentation-if-required-and-talk-through-how-angle-and-cutoff-point-influences-the-above-metrics-furthemore-it-might-be-useful-to-compare-probabilistic-and-determinstic-tractography-methods-in-mrtrix3-to-do-this-you-just-have-to-leave-out-the-algorithm-sd-stream-section-of-the-tckgen-command">
+   Your task is to attempt to optimise the parameters in the python task and MRtrix3 task to find the best values. You can take screenshots in MRtrix3 for your presentation if required and talk through how -angle and -cutoff point influences the above metrics. Furthemore, it might be useful to compare probabilistic and determinstic tractography methods in MRtrix3, to do this, you just have to leave out the -algorithm SD_STREAM section of the tckgen command.
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -293,29 +306,42 @@
         
               <div>
                 
-  <div class="section" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
-<p><em>by Lawrence Binding &amp; Anna Schroder</em></p>
+  <div class="section" id="presentation-assignment">
+<h1>Presentation Assignment<a class="headerlink" href="#presentation-assignment" title="Permalink to this headline">¶</a></h1>
+<p><em>by Anna Schroder</em></p>
 <div class="tip admonition">
 <p class="admonition-title">Estimated Time</p>
-<p>30 minutes</p>
+<p>1 hours</p>
 </div>
-<p>We have learnt the fundamentals of diffusion MRI, and estimating the diffusion tensor. We can already use these values to look at the microstructural properties of the voxels by looking at FA, MD, AD, etc. values. But how do look at the actual structure of white matter and where it runs? This is completed using tractography.</p>
-<div class="iframe-container">
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vReeXLa7lZsVJLlW-qw-fqxPbKpaKihn6DHT68vLIcU2SGQZscKOEfAQPWxq2EjEvBqbmUpwJA87766/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="562" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<p>Congratulations on making it through the week! For the presentation, we had the idea that you can compare the tractogrpahy algorithm you made on Python and MRtrix3 to the ground truth. The below links will take you to a coding assignment where we’ve calculated the accuracy, specificty, and sensitivity of the python and MRtrix3 connectomes for you.</p>
+<div class="section" id="your-task-is-to-attempt-to-optimise-the-parameters-in-the-python-task-and-mrtrix3-task-to-find-the-best-values-you-can-take-screenshots-in-mrtrix3-for-your-presentation-if-required-and-talk-through-how-angle-and-cutoff-point-influences-the-above-metrics-furthemore-it-might-be-useful-to-compare-probabilistic-and-determinstic-tractography-methods-in-mrtrix3-to-do-this-you-just-have-to-leave-out-the-algorithm-sd-stream-section-of-the-tckgen-command">
+<h2>Your task is to attempt to optimise the parameters in the python task and MRtrix3 task to find the best values. You can take screenshots in MRtrix3 for your presentation if required and talk through how -angle and -cutoff point influences the above metrics. Furthemore, it might be useful to compare probabilistic and determinstic tractography methods in MRtrix3, to do this, you just have to leave out the -algorithm SD_STREAM section of the tckgen command.<a class="headerlink" href="#your-task-is-to-attempt-to-optimise-the-parameters-in-the-python-task-and-mrtrix3-task-to-find-the-best-values-you-can-take-screenshots-in-mrtrix3-for-your-presentation-if-required-and-talk-through-how-angle-and-cutoff-point-influences-the-above-metrics-furthemore-it-might-be-useful-to-compare-probabilistic-and-determinstic-tractography-methods-in-mrtrix3-to-do-this-you-just-have-to-leave-out-the-algorithm-sd-stream-section-of-the-tckgen-command" title="Permalink to this headline">¶</a></h2>
+<p>Your coding assignment is to:</p>
+<ul class="simple">
+<li><p>Use tck2connectome to create connectomes of your Python and MRtrix3 tractography and compare them</p></li>
+<li><p>In MRtrix3 Perform probabilstic tractography and compare it to deterministic tractography</p></li>
+</ul>
+<div class="link-container">
+<a href="https://colab.research.google.com/drive/1ku-tfw8LQVxS26v5G8jMluIKpTdQCfZj?usp=sharing"><img src="../../_static/img/group1.png" alt="Google colab" style="width:640px;height:150px;"></a>
+</div>
+<div class="link-container">
+<a href="https://colab.research.google.com/drive/1vuFnyPMho0rL2H3JJQCPt7KE-JDe7AK_?usp=sharing"><img src="../../_static/img/group2.png" alt="Google colab" style="width:640px;height:150px;"></a>
+</div>
+<div class="link-container">
+<a href="https://colab.research.google.com/drive/14S-Kb7LUuYRVo-VaijV0QMcLZQFsiZ9r?usp=sharing"><img src="../../_static/img/group3.png" alt="Google colab" style="width:640px;height:150px;"></a>
+</div>
+<div class="link-container">
+<a href="https://colab.research.google.com/drive/1FapApwZpgVbAeXXJuH6slGp7hFpJFPQv?usp=sharing"><img src="../../_static/img/group4.png" alt="Google colab" style="width:640px;height:150px;"></a>
 </div>
 <style>
-  .iframe-container {
+  .link-container {
 		text-align:center;
   		width:100%;
   }
 </style>
-<div class="admonition-further-reading admonition">
-<p class="admonition-title">Further reading</p>
-<ul class="simple">
-<li><p>Basser, P. J., Pajevic, S., Pierpaoli, C., Duda, J., &amp; Aldroubi, A. (2000). In vivo fiber tractography using DT‐MRI data. Magnetic resonance in medicine, 44(4), 625-632.</p></li>
-<li><p>Yamada, K., Sakai, K., Akazawa, K., Yuen, S., &amp; Nishimura, T. (2009). MR tractography: a review of its clinical applications. Magnetic resonance in medical sciences, 8(4), 165-174.</p></li>
-</ul>
+<style>
+h1 {text-align: center;}
+</style>
 </div>
 </div>
 
@@ -332,7 +358,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./pages/tractography"
+            path: "./pages/deep_learning"
         },
         predefinedOutput: true
     }
@@ -344,8 +370,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../diffusion/coding_assignment.html" title="previous page">Diffusion Coding Assignment</a>
-    <a class='right-next' id="next-link" href="tractography_test.html" title="next page">Basic Tractography Principals</a>
+    <a class='left-prev' id="prev-link" href="introduction.html" title="previous page">Introduction</a>
+    <a class='right-next' id="next-link" href="../feedback/feedback.html" title="next page">Feedback</a>
 
         </div>
         
